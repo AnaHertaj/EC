@@ -88,4 +88,7 @@
     @include tablet{
         padding: 0 5% 5em;
     }
+    @include largest{
+        justify-content: center; 
+    }
 }

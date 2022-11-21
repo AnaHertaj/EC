@@ -3,7 +3,9 @@ body{
     font-size: $font-size-base;
     font-family: $font-sans;
 }
-
+.container{
+    overflow: hidden;
+}
 .section{
     margin: auto;
     width:100%;
