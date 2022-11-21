@@ -1,0 +1,91 @@
+.cab{
+    display: flex;
+    align-items: center;
+    padding-top: 3.5em;
+    overflow: hidden;
+    @include small{
+        padding-top: 0;
+    }
+    &__img{
+        width:100%;
+        animation: opaci 4s;
+        @include small{
+            width:auto;
+        }
+        .only-mob{
+            width:100%;
+        }
+        .only-desk{ 
+            width: 100%;
+            @include large{
+                width: auto;
+            }
+        }
+    }
+    &__text{ 
+        color:white;
+        font-family: $font-serif-bold;
+        line-height: 90%; 
+        font-size:2.5em;
+        .ani{
+            position: relative;
+            &-1{
+                left:150%;
+                animation: cab_text_a1 1s forwards 1, opaci 3s;
+            }
+            &-2{
+                left:200%;
+                animation: cab_text_a2 1s forwards 1, opaci 3s;
+            }
+            &-3{
+                left:250%;
+                animation: cab_text_a3 1s forwards 1, opaci 3s;
+            }
+        }
+        @include tablet{
+            font-size:3em;
+        } 
+        @include desktop{
+            font-size:3.5em;
+        } 
+        @include large{
+            font-size:4em;
+        } 
+        @include largest{
+            font-size:5em; 
+        }
+        transform: translate(0,0);
+        position: absolute;
+        width:100%;
+        top:2em;
+        text-align: center;
+        @include tablet{
+            position: relative;
+            top: 0;
+            left: 0;
+            transform: translate(-1em,-0.25em);
+            width:auto;
+            text-align: left;
+        }
+        @include large{
+            transform: translate(-1em,-0.25em);
+
+        }
+    }
+    &__parraph{
+        color:$white;
+        font-size: 0.8125em;
+        line-height: 1; 
+        margin: 0.5em 1.5em;
+        @include tablet{
+            margin: 0.5em 0;
+        }
+        .golden{
+            font-weight:600;
+            padding-right:0.25em;
+        }
+    }
+    @include tablet{
+        padding: 0 5% 5em;
+    }
+}

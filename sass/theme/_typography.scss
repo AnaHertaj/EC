@@ -1,0 +1,67 @@
+
+@font-face {
+  font-family: 'Roboto Regular';
+  src: url('../fonts/Roboto/Roboto-Regular.eot');
+  src: url('../fonts/Roboto/Roboto-Regular.eot?#iefix') format('embedded-opentype'),
+      url('../fonts/Roboto/Roboto-Regular.woff2') format('woff2'),
+      url('../fonts/Roboto/Roboto-Regular.woff') format('woff'),
+      url('../fonts/Roboto/Roboto-Regular.svg#Roboto-Regular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Roboto Medium';
+  src: url('../fonts/Roboto/Roboto-Medium.eot');
+  src: url('../fonts/Roboto/Roboto-Medium.eot?#iefix') format('embedded-opentype'),
+      url('../fonts/Roboto/Roboto-Medium.woff2') format('woff2'),
+      url('../fonts/Roboto/Roboto-Medium.woff') format('woff'),
+      url('../fonts/Roboto/Roboto-Medium.svg#Roboto-Medium') format('svg');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Roboto Bold';
+  src: url('../fonts/Roboto/Roboto-Bold.eot');
+  src: url('../fonts/Roboto/Roboto-Bold.eot?#iefix') format('embedded-opentype'),
+      url('../fonts/Roboto/Roboto-Bold.woff2') format('woff2'),
+      url('../fonts/Roboto/Roboto-Bold.woff') format('woff'),
+      url('../fonts/Roboto/Roboto-Bold.svg#Roboto-Bold') format('svg');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Inria Serif';
+  src: url('../fonts/Inria_Serif/InriaSerif-Regular.eot');
+  src: url('../fonts/Inria_Serif/InriaSerif-Regular.eot?#iefix') format('embedded-opentype'),
+      url('../fonts/Inria_Serif/InriaSerif-Regular.woff2') format('woff2'),
+      url('../fonts/Inria_Serif/InriaSerif-Regular.woff') format('woff'),
+      url('../fonts/Inria_Serif/InriaSerif-Regular.svg#InriaSerif-Regular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Inria Serif Bold';
+  src: url('../fonts/Inria_Serif/InriaSerif-Bold.eot');
+  src: url('../fonts/Inria_Serif/InriaSerif-Bold.eot?#iefix') format('embedded-opentype'),
+      url('../fonts/Inria_Serif/InriaSerif-Bold.woff2') format('woff2'),
+      url('../fonts/Inria_Serif/InriaSerif-Bold.woff') format('woff'),
+      url('../fonts/Inria_Serif/InriaSerif-Bold.svg#InriaSerif-Bold') format('svg');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap; 
+}
+
+// fonts
+$font-sans: 'Roboto Regular'; 
+$font-sans-medium: 'Roboto Medium';
+$font-sans-bold: 'Roboto Bold';
+$font-serif: 'Inria Serif';
+$font-serif-bold: 'Inria Serif Bold';
+$font-size-base: 1.125em; 

@@ -1,0 +1,26 @@
+
+.infoText{
+    padding: 3em 0;
+   &__parraph{
+        line-height: 1.4; 
+        margin:auto;
+        width:85%; 
+        @include desktop{
+            width:35%; 
+        }
+        padding:1em 0;
+        .bigger{
+            font-family: $font-serif;
+            font-size:5em;
+            display:block;
+        }
+        &_lineBefore::before{
+            content: " ";
+            display: block;
+            margin-top: 1em;
+            border-top: 2px solid $black;
+            width: 2.5em;
+            padding: 0.5em;
+        }
+   }
+}

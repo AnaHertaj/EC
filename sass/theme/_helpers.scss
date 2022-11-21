@@ -1,0 +1,34 @@
+
+.golden{
+    color:$golden;
+}
+
+.text{
+    &-left{
+        text-align: left;
+    }
+    &-white{
+        color:$white;
+    }
+    &-noir{
+        color:$noir;
+    }
+    &-dark-grey{
+       color: $dark-grey; 
+    } 
+}
+
+.only{
+    &-mob{
+        display: block;
+        @include small{
+            display: none;
+        }
+    }
+    &-desk{
+        display: none;
+        @include small{
+            display: block;
+        }
+    }
+}

@@ -1,0 +1,51 @@
+.infoIntro{
+    padding-top: 3em;
+    @include tablet{
+        padding-top: 0;
+    }
+    * {
+        margin:auto;
+    }
+    &__rrss{
+        display:flex;
+        align-items: center;
+        justify-content: center;
+        width:7.5em; 
+        padding-bottom:3em;
+        &Item{
+            background-color: $grey;
+            width:2em;
+            height:2em;
+            display:flex;
+            border-radius: 50%;
+            transition: all 0.4s ease-in-out;
+            .ico{
+                path{
+                 fill:$whiteSmoke; 
+                }
+            }
+            @include desktop{
+                &:hover{
+                    background-color: $whiteSmoke;
+                    transition: all 0.4s ease-in-out;
+                    .ico{
+                        path{
+                            fill:$grey;  
+                        }
+                    }
+                }
+            }
+        }
+    }
+    &__parraph{
+        color:$golden;
+        font-family: $font-serif-bold;
+        line-height: 1.5; 
+        font-size:1.4em;  
+        width:85%; 
+        @include desktop{
+            width:55%;
+        }
+        text-align: center;
+    } 
+}
