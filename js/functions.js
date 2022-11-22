@@ -1,1 +1,36 @@
-function reveal(){for(var e=document.querySelectorAll(".reveal"),t=0;t<e.length;t++){var r=window.innerHeight,i=e[t].getBoundingClientRect();i.top<r&&i.bottom>=0?e[t].classList.add("active"):e[t].classList.remove("active")}}window.addEventListener("scroll",reveal),reveal();let viewportWidth=window.innerWidth;if(viewportWidth>992){let e=document.querySelector(".fullPicture"),t=document.querySelector(".fullPicture__cards");gsap.timeline({scrollTrigger:{trigger:e,start:"top top",end:"200% 100%",pin:!0,scrub:5.5}}).add("start").to(t,6e3,{yPercent:-130},"start")}
+//** animas REVEALS **// // ¯\_(ツ)_/¯ \\
+function reveal() {
+  var reveals = document.querySelectorAll(".reveal"); 
+  for (var i = 0; i < reveals.length; i++) {
+    var windowHeight = window.innerHeight;
+    var position = reveals[i].getBoundingClientRect();
+    if (position.top < windowHeight && position.bottom >= 0) {
+      reveals[i].classList.add("active");
+    } else {
+      reveals[i].classList.remove("active");
+    }
+  }
+}
+window.addEventListener("scroll", reveal);
+reveal();
+
+//** GSAP - scrollTrigger **//
+let viewportWidth = window.innerWidth;
+ if (viewportWidth > 992) {
+  let fullPictureSection = document.querySelector(".fullPicture");
+  let cards = document.querySelector(".fullPicture__cards");
+  let tl = gsap
+    .timeline({
+      scrollTrigger: {
+        trigger: fullPictureSection,
+        start: "top top",
+        end: "200% 100%",
+        pin: true,
+        scrub: 5.5
+      },
+    })
+    .add('start')
+    .to(cards, 6000, {
+      yPercent: -130
+    }, 'start')
+} 
